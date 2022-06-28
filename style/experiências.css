@@ -1,0 +1,121 @@
+.construindo-experiências {
+    display: flex;
+    flex-direction: row;
+    margin-top: 150px;
+}
+
+.construindo-experiências-img {
+    margin-top:7%;
+    display: none;
+    max-width: 400px;
+    margin: 7% auto 0 auto;
+}
+
+.construindo-experiências-img img {
+    border-radius: 20px;
+    width: 100%;
+}
+
+
+.construindo-experiências-text h1{
+    margin-left: 9%;
+    color: var(--branco);
+    font-size: 2.4rem;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.construindo-experiências-text h1::after{
+    content:"";
+    left:-1px;
+    bottom: -2px;
+    margin-top: 2px;
+    display: flex;
+    height: 0;
+    width: 65%;
+    position: relative;
+    border-radius: 5px;
+    border: 3px solid var(--destaques);
+    background-color:var(--destaques);
+}
+
+.construindo-experiências-text p {
+    color: var(--branco);
+    text-align: justify;
+    text-indent: 1.5em;
+    margin-top: 25px;
+    font-size: 1.4rem;
+    max-width: 400px;
+    margin-left: auto;
+}
+
+@media screen and (max-width:744px) {
+    .construindo-experiências {
+        flex-direction:column;
+    }
+
+    .construindo-experiências-text {
+        margin: 0 auto;
+    }
+
+    .construindo-experiências-text h1 {
+       text-align:center;
+       margin-left: 0;
+    }
+
+.construindo-experiências-text h1::after{
+    content:"";
+    margin-left: 18%;
+    left:-5px;
+    bottom: -2px;
+    margin-top: 2px;
+    display: flex;
+    height: 0;
+    width: 65%;
+    position: relative;
+    border-radius: 5px;
+    border: 3px solid var(--destaques);
+    background-color:var(--destaques);
+}
+}
+
+@media screen and (max-width: 440px) {
+    .construindo-experiências-text p {
+        font-size: 1.2rem;
+        max-width: 300px;
+    }   
+
+    .construindo-experiências {
+        margin-top: 100px;
+    }
+
+    .construindo-experiências-text h1 {
+        font-size: 2rem;
+    }
+    .construindo-experiências-img img {
+        width: 100%;
+        max-width:  300px;
+        max-height:199.22px;
+    }
+
+}
+
+@media screen and (min-width:745px) {
+    .construindo-experiências {
+        height: 500px;
+        background: linear-gradient(180deg, #262B2D 1.6%, rgba(38, 43, 45, 0) 50.5%), linear-gradient(0deg, #262B2D 10.6%, rgba(38, 43, 45, 0) 50.5%), linear-gradient(90.54deg, #262B2D 26.67%, rgba(38, 43, 45, 0.79) 45.3%, rgba(0, 0, 0, 0) 65.91%),  url(./images/buda\ 1\ \(1\).png) no-repeat;
+        background-position: left;
+        background-size: cover;
+    }
+
+    .construindo-experiências-text {
+        margin: auto 0 auto 50px;
+    }
+}
+
+@media screen and (max-width:744px) {
+    .construindo-experiências-img {
+        display: flex;
+        justify-content: space-around;
+    }
+}

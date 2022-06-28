@@ -1,0 +1,21 @@
+:root {
+    --fundo: #262B2D;
+    --fundo-alternativa: #001015;
+    --destaques: #A97F5C;
+    --branco:#E6EEEF;
+    --font:('Roboto Condensed', sans-serif);
+}
+
+body {
+    font-family:'Roboto Condensed', sans-serif;
+    background-color: var(--fundo);
+    font-size: 1.2rem;
+    font-weight: normal;
+    min-height: 100vh;
+    min-height: -webkit-fill-available;
+}
+
+html {
+    scroll-behavior: smooth;
+    height: -webkit-fill-available;
+  }

@@ -1,0 +1,227 @@
+.sobre-nós-all {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.sobre-nós {
+    display: flex;
+    flex-direction: column;
+    color: var(--branco);
+}
+
+.sobre-nós h2 {
+    font-size: 2.4rem;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 50px;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.sobre-nós h2::after{
+    content:"";
+    left:-1px;
+    bottom: -2px;
+    margin-top: 2px;
+    display: flex;
+    height: 0;
+    width: 25%;
+    position: relative;
+    border-radius: 5px;
+    border: 3px solid var(--destaques);
+    background-color:var(--destaques);
+    transition: width ease-in-out 300ms;
+}
+
+.sobre-nós input {
+    width: 12rem;
+    height: 2.5rem;
+    text-align: center;
+    margin: 25px auto 0 auto;
+    font-size: 1rem;
+    text-transform: uppercase;
+    color: var(--branco);
+    border: 3px solid #A97F5C;
+    background-color: transparent;
+    box-sizing: border-box;  
+}
+
+.sobre-nós p {
+    text-align: justify;
+    text-indent: 1.5em;
+    margin-top: 25px;
+    font-size: 1.3rem;
+    max-width: 450px;
+    margin-left: auto;
+}
+
+.sobre-nós-image {
+    margin: 8% 0;
+}
+
+.sobre-nós-image img {
+    width: 100%;
+    height: 100%;
+}
+
+.custom-btn {
+    margin: 20px;
+    outline: none;
+}
+
+.custom-btn {
+    width: 110px;
+    text-decoration: none;
+    padding: 10px 25px;
+    border: 2px solid var(--destaques);
+    border-radius:5px ;
+    font-family: var(--font);
+    font-weight: 500;
+    background: transparent;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin:25px auto 0 auto;
+    position: relative;
+    display: inline-block;
+    text-align: center;
+  }
+
+  .custom-btn1 {
+    width: 110px;
+    text-decoration: none;
+    padding: 10px 25px;
+    border: 2px solid var(--destaques);
+    border-radius:5px ;
+    font-family: var(--font);
+    font-weight: 500;
+    background: transparent;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin:25px auto 0 auto;
+    position: relative;
+    display: inline-block;
+  }
+
+  .btn-15 {
+    background: none;
+    font-size: 1.1rem;
+    text-transform: uppercase;
+   color: var(--destaques);
+   z-index: 1;
+ }
+ .btn-15:after {
+   position: absolute;
+   content: "";
+   width: 0;
+   height: 100%;
+   top: 0;
+   right: 0;
+   z-index: -1;
+    background: var(--destaques);
+   transition: all 0.3s ease;
+ }
+ .btn-15:hover {
+   color: var(--branco);
+ }
+ .btn-15:hover:after {
+   left: 0;
+   width: 100%;
+ }
+ .btn-15:active {
+   top: 2px;
+ }
+
+ .btn-15 {
+    background: none;
+    font-size: 1.1rem;
+    text-transform: uppercase;
+   color: var(--destaques);
+   z-index: 1;
+ }
+ .btn-151:after {
+   position: absolute;
+   content: "";
+   width: 0;
+   height: 100%;
+   top: 0;
+   right: 0;
+   z-index: -1;
+    background: var(--destaques);
+   transition: all 0.3s ease;
+ }
+
+ .btn-151:hover:after {
+   left: 0;
+   width: 100%;
+ }
+ .btn-151:active {
+   top: 2px;
+ }
+
+@media screen and (min-width:841px) {
+  .sobre-nós-image img {
+    width: 100%;
+    height: 80%;
+    display: none;
+  }
+
+  .sobre-nós-all {
+    justify-content: normal;
+    background: linear-gradient(180deg, #262B2D 1.6%, rgba(38, 43, 45, 0) 50.5%), linear-gradient(3.14deg, #262B2D 10.6%, rgba(38, 43, 45, 0) 50.5%), linear-gradient(90.54deg, #262B2D 26.67%, rgba(38, 43, 45, 0.79) 45.3%, rgba(0, 0, 0, 0) 65.91%),  url(./images/IMG-20210719-WA0000.jpg) no-repeat;
+    height: 500px;
+    background-position: right;
+  }
+
+  .sobre-nós {
+    margin-left:5%;
+  }
+}
+@media screen and (max-width:840px) {
+    .sobre-nós-all {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+
+    .sobre-nós p {
+        margin: 25px auto 0 auto;
+    }
+
+    .sobre-nós-image img {
+        width: 100%;
+        height: 80%;
+    }
+
+    .sobre-nós-image {
+        margin: 8% auto;
+    }
+}
+
+@media screen and (max-width:450px) {
+    .sobre-nós-all {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    .sobre-nós p {
+        margin: 25px auto 0 auto;
+        font-size: 1.2rem;
+        max-width: 300px;
+    }
+
+    .sobre-nós-image img {
+        width: 80%;
+        height: 80%;
+        margin: auto 0;
+    }
+
+    .sobre-nós-image {
+        margin: 8% auto 0 auto;
+        display: flex;
+        justify-content: space-around;
+    }
+}
